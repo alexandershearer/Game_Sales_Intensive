@@ -1,0 +1,11 @@
+.carousel-item{
+    max-height: 80vh;
+}
+
+.carousel-item img{
+    width: 100%
+}
+
+.homeCarousel{
+    border-bottom: 2px solid #b9b9b9d8;
+}
