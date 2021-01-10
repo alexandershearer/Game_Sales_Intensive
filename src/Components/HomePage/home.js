@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HomeCarousel from './Components/Carousel/carousel'
+import HomeStores from './Components/Stores/stores'
 import './home.css'
 
 class Home extends Component {
@@ -34,9 +35,10 @@ class Home extends Component {
             const responce = await fetch('https://www.cheapshark.com/api/1.0/stores')
             const json = await responce.json()
             this.setState({
-                news: json,
+                stores: json,
                 isLoaded: true
             })
+            return json
         } catch (error) {
             this.setState({
                 error,
@@ -52,13 +54,13 @@ class Home extends Component {
 
 
     render() {
-        if (this.state.error) {
-            return <h1>{this.state.error}</h1>
+        if (this.state.error || !this.state.stores) {
+            return <h1>Error</h1>
         } else {
             return (
                 <div>
                     <HomeCarousel />
-
+                    <HomeStores stores={this.state.stores} />
                 </div >
             )
         }
