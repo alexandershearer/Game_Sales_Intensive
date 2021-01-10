@@ -4,6 +4,7 @@ padding: 10px 14px 10px 14px;
 align-items: center;
 color: white;
 background-color: rgba(72, 89, 100, 0.445);
+border: 1px solid white;
 }
 
 .dealThumb{
@@ -18,8 +19,16 @@ background-color: rgba(72, 89, 100, 0.445);
 }
 
 .listTitle{
-    margin-top: 10px;
+    margin-top: 20px;
     color: white;
+    margin-bottom: 20px;
+}
+
+.listDesc{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .dealNormal{

@@ -38,7 +38,7 @@ class MainDeals extends Component {
     renderGameCards() {
         console.log("Calling card render function")
         return this.state.data.map((game) => {
-            const { title, salePrice, gameID, thumb, normalPrice, metacriticScore } = game
+            const { title, salePrice, gameID, thumb, normalPrice, metacriticScore, steamRatingText } = game
             return (
                 <Container className="dealBox">
                     <Row className="gameDeal" key={gameID}>
@@ -52,7 +52,10 @@ class MainDeals extends Component {
                             <h6>Metacritic: {metacriticScore}</h6>
                         </Col>
                         <Col>
-                            <h6 className="dealNormal">${normalPrice}</h6>
+                            <h6>Steam Ratings: {steamRatingText}</h6>
+                        </Col>
+                        <Col>
+                            <h5 className="dealNormal">${normalPrice}</h5>
                         </Col>
                         <Col>
                             <h5 className="dealPrice">${salePrice}</h5>
@@ -79,7 +82,8 @@ class MainDeals extends Component {
         } else {
             return (
                 <div>
-                    <h2 className="listTitle">Game List</h2>
+                    <h1 className="listTitle">Game List</h1>
+                    <h5 className="listDesc">Here is a list of deals from the selected seller</h5>
                     {this.renderGameCards()}
                 </div>
             )
