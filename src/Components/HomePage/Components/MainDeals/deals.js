@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 import './deals.css'
 
 class MainDeals extends Component {
@@ -37,12 +38,28 @@ class MainDeals extends Component {
     renderGameCards() {
         console.log("Calling card render function")
         return this.state.data.map((game) => {
-            const { title, salePrice, gameID } = game
+            const { title, salePrice, gameID, thumb, normalPrice, metacriticScore } = game
             return (
-                <div className="gameDeal" key={gameID}>
-                    {title}
-                    {salePrice}
-                </div>
+                <Container className="dealBox">
+                    <Row className="gameDeal" key={gameID}>
+                        <Col>
+                            <img className="dealThumb" src={thumb} alt='' />
+                        </Col>
+                        <Col lg="3">
+                            <h4 className="dealTitle">{title}</h4>
+                        </Col>
+                        <Col>
+                            <h6>Metacritic: {metacriticScore}</h6>
+                        </Col>
+                        <Col>
+                            <h6 className="dealNormal">${normalPrice}</h6>
+                        </Col>
+                        <Col>
+                            <h5 className="dealPrice">${salePrice}</h5>
+                        </Col>
+                    </Row>
+                </Container>
+
             )
         })
     }
@@ -62,6 +79,7 @@ class MainDeals extends Component {
         } else {
             return (
                 <div>
+                    <h2 className="listTitle">Game List</h2>
                     {this.renderGameCards()}
                 </div>
             )

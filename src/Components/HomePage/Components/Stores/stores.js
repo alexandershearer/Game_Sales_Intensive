@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Media, Col } from 'react-bootstrap'
 import './stores.css'
 
 class HomeStores extends Component {
@@ -19,7 +18,7 @@ class HomeStores extends Component {
                 if (store.isActive) {
                     return (
                         <Link to={`/store/${store.storeID}`} key={i} className="storeBar">
-                            <p className="storeName">{store.storeName}</p>
+                            <h5 className="storeName">{store.storeName}</h5>
                         </Link>
                     )
                 }
