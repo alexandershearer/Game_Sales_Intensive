@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar/navbar';
 import Home from './Components/HomePage/home';
 import MainDeals from './Components/HomePage/Components/MainDeals/deals';
+import Footer from './Components/Footer/footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Home />
         <Route path="/store/:id" render={(props) => (
           <MainDeals key={props.match.params.id} id={props.match.params.id} />)} />
+        <Footer />
       </div>
     </Router>
   );

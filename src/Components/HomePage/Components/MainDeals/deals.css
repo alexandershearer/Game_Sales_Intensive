@@ -5,6 +5,27 @@ align-items: center;
 color: white;
 background-color: rgba(72, 89, 100, 0.445);
 border: 1px solid white;
+margin-bottom: 20px;
+transition: all 0.3s ease-in;
+}
+
+.gameDeal:hover{
+background-color: rgb(37, 37, 37);
+color: rgb(216, 216, 216);
+}
+
+.dealLink{
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+    transition: all 0.2s ease-in;
+}
+
+.dealLink:visited{
+    color: rgb(255, 255, 255);
+}
+
+.dealLink:hover{
+    color: rgb(58, 150, 255);
 }
 
 .dealThumb{

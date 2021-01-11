@@ -1,0 +1,10 @@
+.Footer{
+    border-top: 2px solid grey;
+    width: 100%;
+    justify-content: center;
+    color: white;
+}
+
+.footerText{
+    padding-top: 5px;
+}

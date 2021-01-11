@@ -36,9 +36,10 @@ class MainDeals extends Component {
 
     //Function for parsing out each game
     renderGameCards() {
-        console.log("Calling card render function")
+
         return this.state.data.map((game) => {
-            const { title, salePrice, gameID, thumb, normalPrice, metacriticScore, steamRatingText } = game
+            const { title, dealID, salePrice, gameID, thumb, normalPrice, metacriticScore, steamRatingText } = game
+            const dealLink = `https://www.cheapshark.com/redirect?dealID=${dealID}`
             return (
                 <Container className="dealBox">
                     <Row className="gameDeal" key={gameID}>
@@ -46,7 +47,10 @@ class MainDeals extends Component {
                             <img className="dealThumb" src={thumb} alt='' />
                         </Col>
                         <Col lg="3">
-                            <h4 className="dealTitle">{title}</h4>
+                            <a className="dealLink" href={dealLink} target="_blank">
+                                {console.log({ dealID })}
+                                <h4 className="dealTitle">{title}</h4>
+                            </a>
                         </Col>
                         <Col>
                             <h6>Metacritic: {metacriticScore}</h6>
@@ -58,7 +62,7 @@ class MainDeals extends Component {
                             <h5 className="dealNormal">${normalPrice}</h5>
                         </Col>
                         <Col>
-                            <h5 className="dealPrice">${salePrice}</h5>
+                            <h5 className="dealPrice">Current Price: ${salePrice}</h5>
                         </Col>
                     </Row>
                 </Container>
