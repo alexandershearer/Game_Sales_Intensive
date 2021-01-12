@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Get game deals from some of the biggest sellers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app can be used by anyone that enjoys playing games on PC and getting them for the best price. It uses the CheapShark API to do most of the outsourcing
+but I decided to take a new approach to the design and moving forward I believe there is potential to make a very appealing website for all gamers to enjoy.
 
-## Available Scripts
+## Current uses
 
-In the project directory, you can run:
+Over the last 5 days I have given the site a news greeting with the carousel to see some of the hottest games/deals right now and what people are saying about them.
+It lets the user know whether the game may be the right choice for them or if they wanna keep an eye on it in case it is available for a good deal.
 
-### `npm start`
+I have also gottten several uses of the API already working. I set up the store navbar to show only the stores that are currently active in the api. If they are not active then the code sweeps them out and saves room for the rest of the stores that are active. I have gotten all deals from each store and able for the user to sort through each store and view all the deals going on. I have also setup to where they can view the Metacritic score and steam reviews in case they want to see the current trend of what people are saying about the game they are looking at. Lastly I displayed the retail price and the current deal price for the user to see.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Future Advancements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+My next steps I wanna make towards this app are shorting the page length by setting up pages for the user to sort through and not feel like they are scrolling forever through the page. That would be next step. After that I would start setting up sorting options for the user to sort through the deals and even games they are looking for. First setting up the pricing options which would really help with how big the user's wallet is feeling. Then being able to search for a particular game would really cut down on the users time searching for a particular game.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
