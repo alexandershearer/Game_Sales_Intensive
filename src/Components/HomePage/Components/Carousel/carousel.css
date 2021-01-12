@@ -8,3 +8,9 @@
 
 .homeCarousel{
 }
+
+.carouselCaption{
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 5%;
+    font-weight: 700;
+}

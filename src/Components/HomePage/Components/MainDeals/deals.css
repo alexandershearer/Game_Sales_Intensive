@@ -16,7 +16,6 @@ color: rgb(216, 216, 216);
 
 .dealLink{
     color:rgb(255, 255, 255);
-    text-decoration: underline;
     transition: all 0.2s ease-in;
 }
 
@@ -26,6 +25,7 @@ color: rgb(216, 216, 216);
 
 .dealLink:hover{
     color: rgb(58, 150, 255);
+    text-decoration: none;
 }
 
 .dealThumb{
